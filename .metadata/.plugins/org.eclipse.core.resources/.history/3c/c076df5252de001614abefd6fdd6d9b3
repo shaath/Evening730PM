@@ -1,0 +1,21 @@
+package day4;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LinksEg2 {
+
+	public static void main(String[] args)
+	{
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http://primusbank.qedgetech.com/sitemap.html");
+		driver.manage().window().maximize();
+		//Method 1
+//		driver.findElement(By.xpath(".//*[@id='Table_011']/tbody/tr[2]/td/ul/li[1]/a")).click();
+
+		//Method 2
+		driver.findElement(By.xpath(".//*[@id='Table_011']/tbody/tr[2]/td")).findElement(By.linkText("Home")).click();
+	}
+
+}

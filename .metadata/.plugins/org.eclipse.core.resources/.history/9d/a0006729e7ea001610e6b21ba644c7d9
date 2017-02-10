@@ -1,0 +1,10 @@
+package xlops;
+
+public class EmpReg_xl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
